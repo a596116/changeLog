@@ -17,7 +17,9 @@
     "prepare": "husky",
     "changelog": "node scripts/generate-changelog.mjs",
     "changelog:all": "node scripts/generate-changelog.mjs --all",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "release": "bash scripts/create-release.sh",
+    "postversion": "git push origin main --tags"
   },
   "dependencies": {
     "vue": "^3.5.26",
