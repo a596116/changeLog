@@ -1,3 +1,18 @@
+## [1.0.2](https://github.com/a596116/changeLog/compare/v1.0.1...v1.0.2) (2025-12-29)
+
+
+### Bug Fixes
+
+* 更新釋出腳本以兼容 macOS，並改善空內容處理 ([ab5ead6](https://github.com/a596116/changeLog/commit/ab5ead62d570f4eb4ea37061775025fa386993af))
+* 修正 postversion script 使用正確的分支名稱 ([45076cf](https://github.com/a596116/changeLog/commit/45076cfa2e1d9cabbace57589cdb56fa69102162))
+
+
+### Features
+
+* 新增圖片放大鏡組件，更新 App.vue 以展示不同放大設定和樣式 ([79d9210](https://github.com/a596116/changeLog/commit/79d9210158e3cb0725c313d90f9d09142a63b387))
+
+
+
 ## [1.0.1](https://github.com/a596116/changeLog/compare/v1.0.0...v1.0.1) (2025-12-29)
 
 
