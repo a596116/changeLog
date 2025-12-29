@@ -60,7 +60,7 @@ git add CHANGELOG.md package.json
 git commit -m "chore: 發布 v1.0.0"
 git tag -a v1.0.0 -m "Release v1.0.0"
 # 4. 推送到遠端
-git push origin main --tags
+git push origin master --tags
 ```
 
 ## 🎨 Commit 類型說明

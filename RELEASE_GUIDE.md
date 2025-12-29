@@ -4,13 +4,13 @@
 
 ```bash
 # 一鍵發布 patch 版本（bug 修復）
-npm version patch && git push origin main --tags
+npm version patch && git push origin master --tags
 
 # 一鍵發布 minor 版本（新功能）
-npm version minor && git push origin main --tags
+npm version minor && git push origin master --tags
 
 # 一鍵發布 major 版本（重大更新）
-npm version major && git push origin main --tags
+npm version major && git push origin master --tags
 ```
 
 ---
@@ -47,7 +47,7 @@ git log --oneline
 npm version patch
 
 # 推送到遠端
-git push origin main --tags
+git push origin master --tags
 ```
 
 ---
@@ -194,7 +194,7 @@ gh release create v1.0.0 \
 ```bash
 # 從 0.0.0 發布到 1.0.0
 npm version major  # 0.0.0 → 1.0.0
-git push origin main --tags
+git push origin master --tags
 ```
 
 ### 場景 2：修復 bug 後發布
@@ -202,7 +202,7 @@ git push origin main --tags
 ```bash
 # 修復 bug 後發布 patch 版本
 npm version patch  # 1.0.0 → 1.0.1
-git push origin main --tags
+git push origin master --tags
 ```
 
 ### 場景 3：新增功能後發布
@@ -210,7 +210,7 @@ git push origin main --tags
 ```bash
 # 新增功能後發布 minor 版本
 npm version minor  # 1.0.1 → 1.1.0
-git push origin main --tags
+git push origin master --tags
 ```
 
 ### 場景 4：重大更新
@@ -218,7 +218,7 @@ git push origin main --tags
 ```bash
 # API 重大變更，不向後兼容
 npm version major  # 1.1.0 → 2.0.0
-git push origin main --tags
+git push origin master --tags
 ```
 
 ---
@@ -235,7 +235,7 @@ git push origin main --tags
 
 之後你只需要：
 ```bash
-git push origin main --tags
+git push origin master --tags
 ```
 
 ---

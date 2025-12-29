@@ -23,7 +23,7 @@
 npm version patch  # 或 minor / major
 
 # 推送到 GitHub（包含 tags）
-git push origin main --tags
+git push origin master --tags
 ```
 
 #### 2️⃣ 打開 GitHub Release 頁面
@@ -154,7 +154,7 @@ pnpm run release v1.0.0
 ```bash
 # 1. 創建版本並推送
 npm version patch
-git push origin main --tags
+git push origin master --tags
 
 # 2. 從 CHANGELOG 自動提取內容創建 Release
 gh release create v1.0.0 \
@@ -190,7 +190,7 @@ gh release create v1.0.0
 ```json
 {
   "scripts": {
-    "postversion": "git push origin main --tags",
+    "postversion": "git push origin master --tags",
     "release": "bash scripts/create-release.sh"
   }
 }
