@@ -19,7 +19,7 @@
     "changelog:all": "node scripts/generate-changelog.mjs --all",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "release": "bash scripts/create-release.sh",
-    "postversion": "git push origin main --tags"
+    "postversion": "git push origin master --tags"
   },
   "dependencies": {
     "vue": "^3.5.26",
