@@ -15,7 +15,6 @@
 ### Features
 
 * **router:** 新增路由配置 ([2dcd6cf](https://github.com/a596116/changeLog/commit/2dcd6cfe3bd9079d6c8fdb30d6217687807aecb9))
-* 不重要的小功能 [skip-changelog] ([15fc552](https://github.com/a596116/changeLog/commit/15fc552a1b63ceadd236badca17e9c3612dfc6c5))
 * 初始化專案結構 ([0742297](https://github.com/a596116/changeLog/commit/07422977ad9aacf15eef07838115fea3a78922a9))
 * 重要的新功能 - 添加搜索功能 ([3f3ff54](https://github.com/a596116/changeLog/commit/3f3ff54129a4eecf58c8444caf9227c18e10c962))
 

@@ -33,11 +33,14 @@ RELEASE_NOTES=$(mktemp)
 VERSION_NUMBER=${VERSION#v}
 
 # 從 CHANGELOG 提取對應版本的內容
-awk "/^# $VERSION_NUMBER /,/^# [0-9]/" CHANGELOG.md | head -n -1 > "$RELEASE_NOTES"
+# 使用 sed 刪除最後一行（macOS 兼容）
+awk "/^# $VERSION_NUMBER /,/^# [0-9]/" CHANGELOG.md | sed '$d' > "$RELEASE_NOTES"
 
-# 如果提取失敗，使用默認內容
+# 如果提取失敗或為空，使用默認內容
 if [ ! -s "$RELEASE_NOTES" ]; then
-  echo "查看完整變更記錄：[CHANGELOG.md](https://github.com/a596116/changeLog/blob/main/CHANGELOG.md)" > "$RELEASE_NOTES"
+  echo "## Release $VERSION
+
+查看完整變更記錄：[CHANGELOG.md](https://github.com/a596116/changeLog/blob/master/CHANGELOG.md)" > "$RELEASE_NOTES"
 fi
 
 # 創建 GitHub Release
