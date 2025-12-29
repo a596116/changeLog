@@ -1,5 +1,18 @@
-# Changelog
+# 0.0.0 (2025-12-29)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### Bug Fixes
+
+* **app:** 修復應用初始化問題 79df156
+* 修復嚴重的資料丟失問題 9522c5d
+* 重要的錯誤修復 5927fb5
+
+
+### Features
+
+* **router:** 新增路由配置 2dcd6cf
+* 初始化專案結構 0742297
+* 重要的新功能 - 添加搜索功能 3f3ff54
+
 
 
